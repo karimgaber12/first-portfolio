@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>portfolio</title>
+</head>
+<body>
+<button id="go-up" class="go-up"><i class="fa fa-chevron-up" aria-hidden="true"></i></button>
+<!--start header-->
+
+<header>
+    <a href="#" class="logo">portfolio</a>
+    <div class="toggle" onclick="togglemenu();"></div>
+    <ul class="menu">
+        <li><a href="#Home" onclick="togglemenu();">Home</a></li>
+        <li><a href="#About" onclick="togglemenu();">About</a></li>
+        <li><a href="#Services" onclick="togglemenu();">Services</a></li>
+        <li><a href="#Work" onclick="togglemenu();">Work</a></li>
+        <li><a href="#Testimonial" onclick="togglemenu();">Testimonial</a></li>
+        <li><a href="#Contact" onclick="togglemenu();">Contact</a></li>
+    </ul>
+</header>
+<!--end header-->
+
+<!--start section know-->
+<section class="banner" id="Home">
+    <div class="textbx">
+        <h2>hello,I am <br><span>Karim Gaber.</span></h2>
+        <h3>I am a frond End web developer</h3>
+        <a href="#About" class="btn">About Me</a>
+    </div>
+</section>
+<!--end section know-->
+
+<!--start about me-->
+<section class="about" id="About">
+    <div class="heading">
+        <h2>About me</h2>
+    </div>
+    <div class="content">
+        <div class="contentbx">
+            <h3>I am a frond End web developer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                   anim id est laborum
+                   <br><br>
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                   Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+                   nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum</p>
+        </div>
+        <div>
+            <img class="about-img" src="img/img1.jpg" alt="img">
+        </div>
+    </div>
+</section>
+<!--end about me-->
+<!--start our services-->
+<section class="services" id="Services">
+    <div class="heading white">
+        <h2>Our Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="content">
+        <div class="servicesbx">
+            <img src="img/icon1.png">
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>
+        <div class="servicesbx">
+            <img src="img/icon2.png">
+            <h2>Web Development</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>        <div class="servicesbx">
+            <img src="img/icon3.png">
+            <h2>Android App</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>        <div class="servicesbx">
+            <img src="img/icon4.png">
+            <h2>Photography</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>        <div class="servicesbx">
+            <img src="img/icon5.png">
+            <h2>Content Writing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>        <div class="servicesbx">
+            <img src="img/icon6.png">
+            <h2>Video Editing</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                 Duis aute irure dolor in reprehenderit in
+                 voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                 </p>
+        </div>
+    </div>
+</section>
+<!--end our services-->
+
+<!--start work-->
+<section class="work" id="Work">
+    <div class="heading">
+        <h2>Our Latest Work</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+        <div class="content">
+            <div class="workbx">
+                <img src="img/product1.jpg">
+            </div>
+            <div class="workbx">
+                <img src="img/product2.jpg">
+            </div>
+            <div class="workbx">
+                <img src="img/product3.jpg">
+            </div>
+            <div class="workbx">
+                <img src="img/product4.jpg">
+            </div>
+
+        </div>
+        <div class="heading">
+            <a href="#" class="btn">View More</a>
+    
+    </div>
+</section>
+<!--end work-->
+
+<!--start testimonial-->
+<section class="testimonial" id="Testimonial">
+    <div class="heading">
+        <h2>testimonial</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="content">
+        <div class="testimonialbx">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum</p>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+        <div class="testimonialbx">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                  voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
+                  anim id est laborum</p>
+                  <h3>Someone Famous<br><span>Creative Designer</span></h3>
+        </div>
+
+    </div>
+</section>
+<!--end testimonial-->
+
+<!--start contact-->
+<section class="contact" id="Contact">
+    <div class="heading white">
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+    </div>
+    <div class="content">
+        <div class="contactinfo">
+            <h3>Contact Info</h3>
+            <div class="contactinfobx">
+                <div class="box">
+                <div class="icon">
+                    <i class="fa fa-map-marker"></i>
+                </div>
+                <div class="text">
+                    <h3>Address</h3>
+                    <p>16 ST/Khaled Ebn ELwaleed,<br>ELminia,<br>Egypt</p>
+                </div>
+               </div>
+               <div class="box">
+                <div class="icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="text">
+                    <h3>Phone</h3>
+                    <p>01110054682</p>
+                </div>
+               </div>
+               <div class="box">
+                <div class="icon">
+                    <i class="fa fa-envelope-o"></i>
+                </div>
+                <div class="text">
+                    <h3>Email</h3>
+                    <p>karimgaberhd@gmail.com</p>
+                </div>
+               </div>
+
+            </div>
+        </div>
+        <div class="formbx">
+            <form>
+                <h3>message me</h3>
+                <input type="text" name="" placeholder="your name">
+                <input type="email" name="" placeholder="email">
+                <textarea placeholder="your message"></textarea>
+                <input type="submit" value="send">
+            </form>
+        </div>
+    </div>
+</section>
+<div class="copyright">
+    <p>copyright &copy; 2020 karim inc</p>  
+</div>    
+
+<!--end contact-->
+
+
+    <script src="main.js"></script>
+</body>
+</html>

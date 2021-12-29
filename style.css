@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+.go-up{
+    display: none;
+    position: fixed;
+    bottom:10px;
+    right: 10px;
+    color: #fff;
+    background: #333;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+/*start section know*/
+section{
+    padding: 100px;
+}
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background-image: url('img/banner.jpg');
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2{
+    color: #fff;
+    font-size: 3em;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+.banner h2 span{
+    font-weight:700;
+    font-size: 1.5em;
+}
+.banner h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+.btn{
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top:20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration:none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+/*end section know*/
+/*start header*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0,0.1);
+}
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+header.sticky .logo{
+    color: #111;
+}
+header ul{
+    position: relative;
+    display: flex;
+}
+header ul li{
+    position: relative;
+    list-style:none;
+    transition: .4s;
+}
+header ul li::after{
+    content: "";
+    background: #2196f3;
+    width:100%;
+    height: 2px;
+    z-index: 1000;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    transform: scalex(0);
+    transform-origin: left;
+    transition: .4s
+}
+header ul li:hover::after{
+    transform: scalex(1);
+    transform-origin: right;
+}
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+header.sticky ul li a{
+    color: #111;
+}
+/*end header*/
+/*start about me*/
+.heading{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+.heading h2{
+    font-size: 30px;
+    font-weight: 600;
+
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+}
+.contentbx{
+    padding-right: 50px;
+    min-width: 50%;
+}
+.contentbx h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.contentbx p{
+    font-size: 20px;
+}
+/*end about me*/
+
+/*start our services*/
+.services{
+    background: #111;
+}
+.heading.white{
+    color: #fff;
+}
+.services .content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.services .content .servicesbx{
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    text-align: center;
+    margin: 20px;
+    max-width: 340px;
+    transition: .5s;
+}
+.services .content .servicesbx:hover{
+    background: #2196f3;
+}
+.services .content .servicesbx img{
+    max-width: 80px;
+    filter:invert(1);
+}
+.services .content .servicesbx h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px;
+}
+/*end our services*/
+
+/*start work*/
+.work .content{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.work .content .workbx{
+    width: 50%;
+    padding: 20px;
+}
+.work .content .workbx img{
+    max-width: 90%;
+    margin-top:20px;
+}
+/*end work*/
+/*start testimonial*/
+.testimonial{
+    background: #f7f7f7;
+}
+.testimonial .content{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.testimonial .content .testimonialbx{
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+    border-radius: 20px;
+}
+.testimonial .content .testimonialbx p{
+    color: #fff;
+    font-style:italic;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 2em;
+}
+.testimonial .content .testimonialbx h3{
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+.testimonial .content .testimonialbx h3 span{
+    font-size: 14px;
+    font-weight: 400;
+}
+/*end testimonial*/
+
+/*start contact*/
+.contact{
+    background: #111;
+}
+.formbx{
+    min-width: 60%;
+}
+.formbx form{
+    display: flex;
+    flex-direction: column;
+}
+.formbx form h3,
+.contactinfo h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.formbx form textarea,
+.formbx form input{
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline:none;
+    background: #222;
+    color: #fff;
+    box-shadow: #473232  0 1px;
+}
+.formbx form textarea{
+    resize: none;
+    min-height: 200px;
+}
+.formbx form input[type="submit"]{
+    max-width: 100px;
+    box-shadow: none;
+    background: #2196f3;
+    cursor: pointer;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.contactinfo{
+    min-width: 40%;
+}
+.contactinfobx{
+    position: relative;
+}
+.contactinfobx .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.contactinfobx .box .icon{
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.contactinfobx .box .text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+.contactinfobx .box .text h3{
+    color: #2196f3;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.copyright{
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+/*end contact*/
+
+/*start responsive*/
+@media (max-width: 991px){
+    header,
+    header.sticky{
+        padding: 20px 50px;
+        z-index: 1000;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .menu{
+        position: fixed;
+        display: block;
+        top: 68px;
+        left: -100%;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: .5s;
+        z-index:999;
+        border-top: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .menu.active{
+        left: 0;
+    }
+    header ul li::after{
+        content:none;
+    }
+    header ul li a{
+        color: #111;
+        margin: 10px;
+        font-size: 25px;
+    }
+    .toggle{
+        width: 40px;
+        height: 40px;
+        background: url(img/menu.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: .3s;
+    }
+    .toggle.active{
+        width: 40px;
+        height: 40px;
+        background: url(img/close.png);
+        background-repeat: no-repeat;
+        cursor: pointer;
+        transition: .3s;
+    }
+    header.sticky .toggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 100px 50px;
+    }
+    .banner{
+        padding: 150px 50px 100px;
+    }
+    .banner h2{
+        font-size: 1.5em;
+    }
+    .banner h3{
+        font-size: 1em;
+    }
+    .btn{
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2{
+        font-size: 24px;
+    }
+    .contentbx h3{
+        font-size: 20px;
+    }
+    .content{
+        flex-direction: column;
+    }
+    .content .contentbx{
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .content .contentbx h3{
+        text-align: start;
+    }
+    .content .about-img{
+        width: 100%;
+    }
+    .work .content .workbx{
+        width: 100%;
+        padding: 10px;
+    }
+    .testimonial .content .testimonialbx{
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .testimonial .content .testimonialbx h3{
+        margin-top: 20px;
+    }
+    .contactinfo{
+        margin: 20px 0;
+    }
+}
+@media(max-width:600px){
+    header,
+    header.sticky{
+        padding: 20px 20px;
+    }
+    .banner{
+        padding: 150px 20px 100px;
+    }
+    section{
+        padding: 100px 20px;
+    }
+}
+/*end responsive*/
